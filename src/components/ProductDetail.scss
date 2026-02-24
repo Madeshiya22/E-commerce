@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f6f9;
+}
+
+/* Main Container */
+.product-detail {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+
+  /* Back Link */
+  a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #000;
+      transform: translateX(-5px);
+    }
+  }
+
+  /* Card Layout */
+  .product-img {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to right, #000000, #878888);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 350px;
+      max-width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: 0.4s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    div {
+      flex: 1;
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+
+      p {
+        color: #ffffff;
+        line-height: 1.7;
+        margin-bottom: 25px;
+      }
+
+      h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+        color: #ffffff;
+      }
+
+      button {
+        padding: 14px 35px;
+        background: linear-gradient(135deg, #2b2b2b, #000000);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+          transform: scale(0.96);
+        }
+      }
+    }
+  }
+}
+
+/* Not Found */
+.p-not-found {
+  text-align: center;
+  padding: 100px 20px;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .product-detail {
+    .product-img {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+
+      img {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+}

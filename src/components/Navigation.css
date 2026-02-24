@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+  background: rgb(234, 234, 234);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 0 20px;
+}
+.nav-container figure {
+  width: 80px;
+  height: 80px;
+}
+.nav-container figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nav-container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.nav-container nav .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-decoration: none;
+  list-style: none;
+}
+.nav-container nav .nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-container nav .product-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-container nav .product-icons a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-container nav .nav-button {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav-container nav .nav-button:active {
+  transform: scale(0.98);
+}/*# sourceMappingURL=Navigation.css.map */
