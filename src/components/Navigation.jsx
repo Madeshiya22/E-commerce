@@ -1,8 +1,8 @@
 import React from "react";
 import "./Navigation.css";
 import { Link, useLocation } from "react-router-dom";
-import { ShoppingCart } from 'lucide-react';
-import { Heart } from 'lucide-react';
+import { ShoppingCart } from "lucide-react";
+import { Heart } from "lucide-react";
 
 const navLinks = [
   {
@@ -25,6 +25,7 @@ const navLinks = [
     link: "/contact",
     id: 4,
   },
+ 
 ];
 
 const Navigation = () => {
@@ -54,10 +55,14 @@ const Navigation = () => {
           {isProductDetail && (
             <div className="product-icons">
               <li>
-                <Link to="/cart"><ShoppingCart /></Link>
+                <Link to="/cart">
+                  <ShoppingCart />
+                </Link>
               </li>
               <li>
-                <Link to="/wishlist"><Heart /></Link>
+                <Link to="/wishlist">
+                  <Heart />
+                </Link>
               </li>
             </div>
           )}
